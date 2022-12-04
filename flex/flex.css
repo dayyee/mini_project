@@ -1,0 +1,155 @@
+:root{
+    --text-color:#f2f2f2;
+    --background-color:#ba6b6c;
+    --accent-color:#ffcccb(226, 226, 226);
+}
+
+body{
+    margin: 0;
+    width:100%;
+    width:100%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    padding:8px 12px;
+}
+
+.nav__logo{
+    font-size:26px;
+    color:#ffe7e6;
+}
+
+.nav__menu{
+    display: flex;
+    list-style: none;
+    padding-left:0;
+}
+
+.nav__menu li{
+    font-size:17px;
+    padding:8px 30px;
+}
+
+.nav__menu li a:hover{
+    color:rgb(56, 56, 56);
+}
+
+.navbar__icons{
+    display:flex;
+    list-style: none;
+    padding-left:0;
+}
+
+.navbar__icons li{
+    padding: 8px 12px;
+}
+
+
+.navbar__icons li i{
+    color:#ffe7e6;
+}
+
+.navbar__icons i:hover{
+    color:rgb(56, 56, 56);
+}
+
+
+.navbar__toggleBtn{
+    position:absolute;
+    right:32px;
+    font-size:24px;
+    color:var(--text-color);
+    display: none;
+
+}
+
+#main{
+    background-color: rgb(249, 234, 234);
+    text-align: center;
+}
+
+#main .mainPage{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+#main p{
+    font-size: 20px;
+    text-align: center;
+}
+
+#footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ba6b6c;
+    color:var(--text-color);
+    text-align: center;
+    height: 50px;
+}
+
+#footer .copyright,
+#footer .address{
+    font-size:small;
+    padding-top:13px;
+    
+}
+
+
+
+
+@media screen and (max-width:768px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding:8px 24px;
+    }
+
+    .nav__menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+    }
+
+    .nav__menu li{
+        width:100%;
+        text-align: center;
+        
+    }
+    .navbar__icons{
+        display: none;
+        justify-content: center;
+        width:100%;
+    }
+
+    .navbar__toggleBtn{
+        display:block;
+    }
+
+    .nav__menu.active,
+    .navbar__icons.active{
+        display: flex;
+    }
+
+    #main .mainPage{
+        display:block;
+
+    }
+
+    #footer{
+        display:block;
+        height:100%;
+        text-align: center;
+        padding-bottom:13px;
+    }
+
+}
