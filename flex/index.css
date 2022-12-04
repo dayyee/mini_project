@@ -6,8 +6,7 @@
 
 body{
     margin: 0;
-    width:100%;
-    width:100%;
+    width:100vw;
 }
 
 a{
@@ -74,14 +73,14 @@ a{
 #main{
     background-color: rgb(249, 234, 234);
     text-align: center;
+    width: 100vw;
+
 }
 
 #main .mainPage{
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
 }
-
-
 
 
 
