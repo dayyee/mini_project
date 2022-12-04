@@ -82,7 +82,11 @@ a{
     grid-template-columns: 50% 50%;
 }
 
-
+#main .mainPage img{
+    vertical-align: bottom;
+    margin:0px;
+    padding:0px;
+}
 
 
 #main p{
@@ -103,6 +107,7 @@ a{
 #footer .address{
     font-size:small;
     padding-top:13px;
+
     
 }
 
@@ -110,6 +115,7 @@ a{
 
 
 @media screen and (max-width:768px){
+
     .navbar{
         flex-direction: column;
         align-items: flex-start;
@@ -143,17 +149,23 @@ a{
         display: flex;
     }
 
+    #main{
+        margin:0;
+        padding:0;
+    }
     #main .mainPage{
         display:block;
         width:100%;
-
     }
+
+
 
     #footer{
         display:block;
         height:100%;
         text-align: center;
         padding-bottom:13px;
+        border:0;
     }
 
 }
